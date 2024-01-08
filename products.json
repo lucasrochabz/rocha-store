@@ -1,0 +1,60 @@
+[
+  {
+    "id": "1",
+    "category": "Tênis",
+    "discount": 30,
+    "imgSrc": "/assets/img/featured-product.png",
+    "name": "Nike Air Max - Masculino",
+    "price": 250
+  },
+  {
+    "id": "2",
+    "category": "Tênis",
+    "imgSrc": "/assets/img/featured-product.png",
+    "name": "Adidas Ultraboost - Masculino",
+    "price": 120
+  },
+  {
+    "id": "3",
+    "category": "Tênis",
+    "discount": 20,
+    "imgSrc": "/assets/img/featured-product.png",
+    "name": "Puma RS-X - Masculino",
+    "price": 110
+  },
+  {
+    "id": "4",
+    "category": "Tênis",
+    "imgSrc": "/assets/img/featured-product.png",
+    "name": "New Balance 990 - Masculino",
+    "price": 130
+  },
+  {
+    "id": "5",
+    "category": "Tênis",
+    "imgSrc": "/assets/img/featured-product.png",
+    "name": "Vans Old Skool - Masculino",
+    "price": 90
+  },
+  {
+    "id": "6",
+    "category": "Tênis",
+    "imgSrc": "/assets/img/featured-product.png",
+    "name": "Reebok Classic - Masculino",
+    "price": 280
+  },
+  {
+    "id": "7",
+    "category": "Tênis",
+    "imgSrc": "/assets/img/featured-product.png",
+    "name": "Converse Chuck Taylor - Masculino",
+    "price": 320
+  },
+  {
+    "id": "8",
+    "category": "Tênis",
+    "imgSrc": "/assets/img/featured-product.png",
+    "name": "Asics Gel-Kayano - Masculino",
+    "price": 300
+  }
+]
