@@ -19,3 +19,8 @@
   text-decoration: none;
   font-size: 14px;
 }
+
+.sidebar-container a.active {
+  color: #c92071;
+  font-weight: bold;
+}

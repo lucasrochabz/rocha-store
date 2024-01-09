@@ -1,6 +1,9 @@
+import { Link, useLocation } from 'react-router-dom'
 import './Header.css'
 
 export const Header = () => {
+  const location = useLocation()
+
   return (
     <>
       <section className='header-container'>
@@ -14,10 +17,22 @@ export const Header = () => {
         <div className='header-nav'>
           <nav>
             <ul>
-              <li>Home</li>
-              <li>Produtos</li>
-              <li>Categorias</li>
-              <li>Meus pedidos</li>
+              <li>
+                <Link to="/" className={location.pathname === '/' ? 'active' : ''}>
+                  Home
+                </Link>
+              </li>
+              <li>
+                <a href="#">Produtos</a>
+              </li>
+              <li>
+                <a href="#">Categorias</a>
+              </li>
+              <li>
+                <Link to="/meuspedidos" className={location.pathname === '/meuspedidos' ? 'active' : ''}>
+                  Meus Pedidos
+                </Link>
+              </li>
             </ul>
           </nav>
         </div>

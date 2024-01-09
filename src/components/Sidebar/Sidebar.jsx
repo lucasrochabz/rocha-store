@@ -1,6 +1,9 @@
+import { Link, useLocation } from 'react-router-dom'
 import './Sidebar.css'
 
 export const Sidebar = () => {
+  const location = useLocation()
+
   return(
     <>
       <div className="sidebar-container">
@@ -10,7 +13,9 @@ export const Sidebar = () => {
             <hr />
           </li>
           <li>
-            <a href="#">Meus Pedidos</a>
+            <Link to="/meuspedidos" className={location.pathname === '/meuspedidos' ? 'active' : ''}>
+              Meus Pedidos
+            </Link>
             <hr />
           </li>
           <li>

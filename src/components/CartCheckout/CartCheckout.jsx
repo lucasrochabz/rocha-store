@@ -4,7 +4,7 @@ import { CartCheckoutRow } from './CartCheckoutRow'
 import productsData from "../../../products.json"
 import { Footer } from '../Footer/Footer'
 import { Header } from '../Header/Header'
-import { Summary } from '../Summary/Summary'
+import { SummaryBar } from '../SummaryBar/SummaryBar'
 
 export const CartCheckout = () => {
     const [items, setItems] = useState([])
@@ -60,7 +60,7 @@ export const CartCheckout = () => {
                         </tbody>
                     </table>
                 </div>
-                <Summary />
+                <SummaryBar />
             </section>
             <Footer />
         </>

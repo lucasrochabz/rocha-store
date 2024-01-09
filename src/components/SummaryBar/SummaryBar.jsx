@@ -1,6 +1,6 @@
-import './Summary.css'
+import './SummaryBar.css'
 
-export const Summary = () => {
+export const SummaryBar = () => {
   return (
     <>
       <section className='summary-container'>
