@@ -1,5 +1,6 @@
 import { Footer } from "../../components/Footer/Footer";
 import { Header } from "../../components/Header/Header";
+import { Sidebar } from "../../components/Sidebar/Sidebar";
 import "./MyRequests.css";
 
 export const MyRequests = () => {
@@ -7,27 +8,8 @@ export const MyRequests = () => {
     <>
       <Header />
       <section className="main-request-container">
-
-        <div className="sidebar-container">
-          <ul>
-            <li>
-              <a href="#">Meu perfil</a>
-              <hr />
-            </li>
-            <li>
-              <a href="#">Meus Pedidos</a>
-              <hr />
-            </li>
-            <li>
-              <a href="#">Minhas Informações</a>
-              <hr />
-            </li>
-            <li>
-              <a href="#">Métodos de Pagamento</a>
-            </li>
-          </ul>
-        </div>
-
+        <Sidebar />
+        
         <div className="status-container">
           <div className="status-container-header">
             <h3>Meus pedidos</h3>
