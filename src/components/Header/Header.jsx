@@ -3,7 +3,7 @@ import './Header.css'
 export const Header = () => {
   return (
     <>
-      <div className='header-container'>
+      <section className='header-container'>
         <div className='header-menu'>
           <h1>Digital Store</h1>
           <input placeholder='Pesquisar produto' type="text" />
@@ -21,7 +21,7 @@ export const Header = () => {
             </ul>
           </nav>
         </div>
-      </div>
+      </section>
     </>
   )
 }

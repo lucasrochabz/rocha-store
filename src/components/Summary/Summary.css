@@ -1,0 +1,40 @@
+.summary-container {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  width: 300px;
+}
+
+.summary {
+  display: flex;
+}
+
+.summary-title {
+  padding: 20px 0;
+}
+
+.summary-title p, h2 {
+  padding: 5px 0;
+}
+
+.summary-price {
+  text-align: right;
+  padding: 20px 0;
+
+}
+
+.summary-price p, h2 {
+  padding: 5px 0;
+}
+
+.button-summary {
+  background-color: #f6aa1c;
+  color: white;
+  text-decoration: none;
+  border: none;
+  text-align: center;
+  display: block;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 10px;
+}

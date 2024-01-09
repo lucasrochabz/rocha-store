@@ -2,22 +2,25 @@
 
 .cart-checkout-container {
     display: flex;
-    gap: 20px;
     justify-content: space-between;
-    margin: 0 80px;
     align-items: flex-start;
+    gap: 20px;
+    margin: 0 80px;
 }
 
 .my-cart-content {
     background-color: white;
+    border-radius: 5px;
+    padding: 0 20px;
     width: 100vh;
 }
 
 thead th {
+    color: #1F1F1F;
     border-bottom: 1px solid lightgray;
     padding: 15px 20px;
     font-weight: normal;
-    color: #1F1F1F;
+    width: 100vh;
 }
 
 th.bold {
@@ -72,8 +75,8 @@ span.show-variable {
 }
 
 .image {
-    width: 100px;
-    height: 100px;
+    display: block;
+    width: 100%;
 }
 
 .center {
@@ -82,45 +85,4 @@ span.show-variable {
 
 .bold {
     font-weight: bold;
-}
-
-.summary-container {
-    background-color: white;
-    padding: 20px;
-    width: 300px;
-    border-radius: 5px;
-}
-
-.summary {
-    display: flex;
-}
-
-.summary-title {
-    padding: 20px 0;
-}
-
-.summary-title p, h2 {
-    padding: 5px 0;
-}
-
-.summary-price {
-    text-align: right;
-    padding: 20px 0;
-
-}
-
-.summary-price p, h2 {
-    padding: 5px 0;
-}
-
-.button-summary {
-    margin-top: 10px;
-    padding: 10px;
-    text-decoration: none;
-    text-align: center;
-    background-color: #f6aa1c;
-    color: white;
-    display: block;
-    border: none;
-    border-radius: 10px;
 }
