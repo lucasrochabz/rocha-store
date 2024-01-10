@@ -1,9 +1,11 @@
 import { Footer } from "../../components/Footer/Footer";
+import { HeaderClean } from "../../components/HeaderClean/HeaderClean";
 import "./CreateAccount.css";
 
 export const CreateAccount = () => {
   return (
     <>
+    <HeaderClean />
     <section className="create-account-container">
       <section className="create-account-content">
         <h1>Criar conta</h1>
