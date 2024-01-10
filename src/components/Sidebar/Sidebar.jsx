@@ -9,21 +9,25 @@ export const Sidebar = () => {
       <div className="sidebar-container">
         <ul>
           <li>
-            <a href="#">Meu perfil</a>
+            <Link to="meu-perfil">
+              Meu perfil
+            </Link>
             <hr />
           </li>
           <li>
-            <Link to="/meuspedidos" className={location.pathname === '/meuspedidos' ? 'active' : ''}>
+            <Link to="meus-pedidos" className={location.pathname === '/meuspedidos' ? 'active' : ''}>
               Meus Pedidos
             </Link>
             <hr />
           </li>
           <li>
-            <a href="#">Minhas Informações</a>
+            <Link to="minhas-informacoes">
+              Minhas Informações
+            </Link>
             <hr />
           </li>
           <li>
-            <a href="#">Métodos de Pagamento</a>
+            <Link to="metodos-de-pagamento">Métodos de Pagamento</Link>
           </li>
         </ul>
       </div>

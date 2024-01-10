@@ -9,7 +9,9 @@ import { HomePage } from './pages/HomePage/HomePage'
 import { CartCheckout } from './components/CartCheckout/CartCheckout'
 import { ProductDetails } from './pages/ProductDetails/ProductDetails'
 import { CreateAccount } from './pages/CreateAccount/CreateAccount'
-import { MyRequests } from './pages/MyRequests/MyRequests'
+import { MyAccount } from './pages/MyAccount/MyAccount'
+import { MyOrders } from './components/MyOrders/MyOrders'
+import { MyInfos } from './components/MyInfos/MyInfos'
 
 const router = createBrowserRouter([
   {
@@ -30,7 +32,25 @@ const router = createBrowserRouter([
   },
   {
     path: '/meuspedidos',
-    element: <MyRequests />
+    element: <MyAccount />,
+    children: [
+      {
+        path: 'meu-perfil',
+        element: <h1>Meu perfil</h1>
+      },
+      {
+        path: 'meus-pedidos',
+        element: <MyOrders />
+      },
+      {
+        path: 'minhas-informacoes',
+        element: <MyInfos />
+      },
+      {
+        path: 'metodos-de-pagamento',
+        element: <h1>Métodos de Pagamento</h1>
+      },
+    ]
   },
 ])
 

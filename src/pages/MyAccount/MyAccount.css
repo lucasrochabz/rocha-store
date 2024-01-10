@@ -1,0 +1,18 @@
+body {
+  background-color: #f9f8fe;
+}
+
+.account-container {
+  width: 100%;
+  display: flex;
+  margin: 80px;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.account-content {
+  background-color: white;
+  border-radius: 5px;
+  width: 100vh;
+  padding: 20px;
+}
