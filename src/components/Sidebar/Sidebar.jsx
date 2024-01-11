@@ -10,7 +10,7 @@ export const Sidebar = () => {
         <ul>
           <li>
             <Link to="meu-perfil">
-              Meu perfil
+              Meu Perfil
             </Link>
             <hr />
           </li>

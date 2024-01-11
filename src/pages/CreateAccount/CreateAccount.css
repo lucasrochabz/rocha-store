@@ -38,6 +38,10 @@ body {
   border-radius: 5px;
 }
 
+.create-account-container input::placeholder {
+  color: #a0a0a0;
+}
+
 .notification {
   display: flex;
   display: grid;
@@ -47,13 +51,12 @@ body {
   align-items: baseline;
 }
 
-.create-account-container a {
+.create-account-container button {
+  cursor: pointer;
   background-color: #c92071;
   color: white;
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  padding: 10px 20px;
+  padding: 10px;
   border-radius: 10px;
   margin: 10px 0px;
+  width: 100%;
 }

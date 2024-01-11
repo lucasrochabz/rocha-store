@@ -1,0 +1,14 @@
+.popup {
+  width: 400px;
+  height: 200px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.ReactModal__Content {
+  background-color: #d7d7d7;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+}

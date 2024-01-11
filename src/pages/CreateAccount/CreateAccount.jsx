@@ -1,8 +1,39 @@
+import { useState } from "react";
 import { Footer } from "../../components/Footer/Footer";
 import { HeaderClean } from "../../components/HeaderClean/HeaderClean";
 import "./CreateAccount.css";
+import { useEffect } from "react";
+import { Popup } from "../../components/Popup/Popup";
 
 export const CreateAccount = () => {
+
+  const [modalIsOpen, setModalIsOpen] = useState(false)
+  const [formData, setFormData] = useState(() => {
+    const savedData = localStorage.getItem('formData')
+
+    return savedData ? JSON.parse(savedData) : {nomeCompleto: ""}
+  })
+
+  useEffect(() => {
+    localStorage.setItem('formData', JSON.stringify(formData))
+  }, [formData])
+
+  const handleInputChange = (e) => {
+    const {name, value} = e.target
+    setFormData({
+      ...formData,
+      [name]: value,
+    })
+  }
+
+  const handleCreateAccount = () => {
+    setModalIsOpen(true)
+  }
+
+  const closeModal = () => {
+    setModalIsOpen(false)
+  }
+
   return (
     <>
     <HeaderClean />
@@ -13,7 +44,13 @@ export const CreateAccount = () => {
           <h2>Informações Pessoais</h2>
           <hr />
           <label htmlFor="nomecompleto">Nome Completo *</label>
-          <input placeholder="Insira seu nome" type="text" />
+          <input 
+            name='nomeCompleto'
+            placeholder="Insira seu nome"
+            type="text"
+            value={formData.nomeCompleto}
+            onChange={handleInputChange}
+          />
 
           <label htmlFor="cpf">CPF *</label>
           <input placeholder="Insira seu CPF" type="text" />
@@ -51,11 +88,17 @@ export const CreateAccount = () => {
           </p>
         </div>
 
-        <a href="#">Criar conta</a>
+        <button onClick={handleCreateAccount}>Criar conta</button>
       </section>
 
     </section>
     <Footer />
+
+    <Popup 
+      isOpen={modalIsOpen}
+      onRequestClose={closeModal}
+      message={`${formData.nomeCompleto}, seu cadastro foi concluído com sucesso!`}
+    />
     </>
   );
 };

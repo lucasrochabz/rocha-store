@@ -12,6 +12,7 @@ import { CreateAccount } from './pages/CreateAccount/CreateAccount'
 import { MyAccount } from './pages/MyAccount/MyAccount'
 import { MyOrders } from './components/MyOrders/MyOrders'
 import { MyInfos } from './components/MyInfos/MyInfos'
+import { MyProfile } from './components/MyProfile/MyProfile'
 
 const router = createBrowserRouter([
   {
@@ -36,7 +37,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: 'meu-perfil',
-        element: <h1>Meu perfil</h1>
+        element: <MyProfile />
       },
       {
         path: 'meus-pedidos',

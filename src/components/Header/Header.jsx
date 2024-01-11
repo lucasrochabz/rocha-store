@@ -1,8 +1,24 @@
-import { Link, useLocation } from 'react-router-dom'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 import './Header.css'
 
 export const Header = () => {
   const location = useLocation()
+
+  const ParentNavLink = ({ to, label }) => (
+    <NavLink
+      to={to}
+      activeClassName="active"
+      isActive={(match, location) => {
+        // Adicione a classe "active" manualmente ao elemento da rota pai se a rota atual corresponder à rota pai
+        if (match || location.pathname.startsWith(to)) {
+          return true;
+        }
+        return false;
+      }}
+    >
+      {label}
+    </NavLink>
+  );
 
   return (
     <>
@@ -29,9 +45,7 @@ export const Header = () => {
                 <a href="#">Categorias</a>
               </li>
               <li>
-                <Link to="/meuspedidos" className={location.pathname === '/meuspedidos' ? 'active' : ''}>
-                  Meus Pedidos
-                </Link>
+                <ParentNavLink to="/meuspedidos" label="Meus Pedidos" />
               </li>
             </ul>
           </nav>
