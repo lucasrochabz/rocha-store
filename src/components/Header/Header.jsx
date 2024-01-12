@@ -9,7 +9,6 @@ export const Header = () => {
       to={to}
       activeClassName="active"
       isActive={(match, location) => {
-        // Adicione a classe "active" manualmente ao elemento da rota pai se a rota atual corresponder à rota pai
         if (match || location.pathname.startsWith(to)) {
           return true;
         }
@@ -24,9 +23,17 @@ export const Header = () => {
     <>
       <section className='header-container'>
         <div className='header-menu'>
-          <h1>Digital Store</h1>
+
+          <Link to="/">
+            <img src="assets/img/logo.png" alt="Logo Digital Store" />
+          </Link>
+          
           <input placeholder='Pesquisar produto' type="text" />
-          <a href="#">Cadastre-se</a>
+
+          <Link to="/criar-conta">
+            Cadastre-se
+          </Link>
+
           <a className='button' href="#">Entrar</a>
           <span>Carrinho</span>
         </div>
@@ -45,7 +52,7 @@ export const Header = () => {
                 <a href="#">Categorias</a>
               </li>
               <li>
-                <ParentNavLink to="/meuspedidos" label="Meus Pedidos" />
+                <ParentNavLink to="/meus-pedidos" label="Meus Pedidos" />
               </li>
             </ul>
           </nav>

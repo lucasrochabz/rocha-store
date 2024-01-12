@@ -10,9 +10,10 @@ import { CartCheckout } from './components/CartCheckout/CartCheckout'
 import { ProductDetails } from './pages/ProductDetails/ProductDetails'
 import { CreateAccount } from './pages/CreateAccount/CreateAccount'
 import { MyAccount } from './pages/MyAccount/MyAccount'
-import { MyOrders } from './components/MyOrders/MyOrders'
-import { MyInfos } from './components/MyInfos/MyInfos'
-import { MyProfile } from './components/MyProfile/MyProfile'
+import { MyOrders } from './pages/MyAccount/MyOrders/MyOrders'
+import { MyInfos } from './pages/MyAccount/MyInfos/MyInfos'
+import { MyProfile } from './pages/MyAccount/MyProfile/MyProfile'
+import { Login } from './pages/Login/Login'
 
 const router = createBrowserRouter([
   {
@@ -28,11 +29,15 @@ const router = createBrowserRouter([
     element: <ProductDetails />
   },
   {
-    path: '/criarconta',
+    path: '/criar-conta',
     element: <CreateAccount />
   },
   {
-    path: '/meuspedidos',
+    path: '/login',
+    element: <Login />
+  },
+  {
+    path: '/meus-pedidos',
     element: <MyAccount />,
     children: [
       {

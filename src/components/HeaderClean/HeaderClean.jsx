@@ -1,10 +1,13 @@
+import { Link } from 'react-router-dom'
 import './HeaderClean.css'
 
 export const HeaderClean = () => {
   return(
     <>
       <div className='header-clean-container'>
-        <a href="http://localhost:5173/">Drip Store</a>
+        <Link to='/'>
+          <img src="assets/img/logo.png" alt="" />
+        </Link>
       </div>
     </>
   )

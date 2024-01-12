@@ -39,9 +39,9 @@ export const CreateAccount = () => {
     <HeaderClean />
     <section className="create-account-container">
       <section className="create-account-content">
-        <h1>Criar conta</h1>
-        <div className="personal-information">
-          <h2>Informações Pessoais</h2>
+        <h3>Criar conta</h3>
+        <div className="info-content">
+          <p>Informações Pessoais</p>
           <hr />
           <label htmlFor="nomecompleto">Nome Completo *</label>
           <input 
@@ -58,12 +58,12 @@ export const CreateAccount = () => {
           <label htmlFor="email">E-mail *</label>
           <input placeholder="Insira seu email" type="text" />
 
-          <label htmlFor="celular">Celular</label>
+          <label htmlFor="celular">Celular *</label>
           <input placeholder="Insira seu celular" type="text" />
         </div>
 
-        <div className="delivery-information">
-          <h2>Informações de Entrega</h2>
+        <div className="info-content">
+          <p>Informações de Entrega</p>
           <hr />
           <label htmlFor="endereço">Endereço *</label>
           <input placeholder="Insira seu endereço" type="text" />

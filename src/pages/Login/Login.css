@@ -1,0 +1,13 @@
+body {
+  background-color: #dcdcfa;
+}
+
+.login-container {
+  padding: 60px;
+}
+.login-content {
+
+  background-color: #ffffff;
+  width: 600px;
+  height: 500px;
+}
