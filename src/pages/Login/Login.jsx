@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { Footer } from "../../components/Footer/Footer"
 import { HeaderClean } from "../../components/HeaderClean/HeaderClean"
 import "./Login.css"
@@ -8,15 +9,20 @@ export const Login = () => {
       <HeaderClean />
       <section className="login-container">
         <div className="login-content">
-        <h1>Acesse sua conta</h1>
-        <p>Novo cliente? Então regriste-se aqui.</p>
+        <h3>Acesse sua conta</h3>
+        <p>
+          Novo cliente? Então regriste-se <span>aqui.</span>
+        </p>
 
-        <p>Login</p>
+        <label htmlFor="login">Login *</label>
         <input placeholder="Insira seu login ou email" type="text" />
-        <p>Senha</p>
+
+        <label htmlFor="senha">Senha *</label>
         <input placeholder="Insira sua senha" type="text" />
 
-        <p>Esqueci minha senha</p>
+        <Link to="#">
+          Esqueci minha senha
+        </Link>
 
         <button>Acessar conta</button>
 

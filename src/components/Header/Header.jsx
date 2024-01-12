@@ -34,7 +34,10 @@ export const Header = () => {
             Cadastre-se
           </Link>
 
-          <a className='button' href="#">Entrar</a>
+          <Link className='button' to="/login">
+            Entrar
+          </Link>
+          
           <span>Carrinho</span>
         </div>
         <div className='header-nav'>

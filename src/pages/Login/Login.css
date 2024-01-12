@@ -1,13 +1,35 @@
-body {
-  background-color: #dcdcfa;
-}
-
 .login-container {
+  background: linear-gradient(to top right, #dcdcfa, #b8b9f3);
   padding: 60px;
 }
-.login-content {
 
+.login-content {
   background-color: #ffffff;
   width: 600px;
   height: 500px;
+  padding: 30px;
+}
+
+.login-content p {
+  margin-top: 20px;
+}
+
+.login-content label {
+  display: block;
+  /* background-color: red; */
+  margin-top: 30px;
+}
+
+.login-content input {
+  display: block;
+}
+
+.login-content a {
+  display: block;
+  margin-top: 30px;
+}
+
+.login-content button {
+  display: block;
+  margin-top: 30px;
 }
