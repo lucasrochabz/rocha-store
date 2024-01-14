@@ -14,6 +14,7 @@ import { MyOrders } from './pages/MyAccount/MyOrders/MyOrders'
 import { MyInfos } from './pages/MyAccount/MyInfos/MyInfos'
 import { MyProfile } from './pages/MyAccount/MyProfile/MyProfile'
 import { Login } from './pages/Login/Login'
+import { Pgto } from './pages/MyAccount/Pgto/Pgto'
 
 const router = createBrowserRouter([
   {
@@ -54,7 +55,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'metodos-de-pagamento',
-        element: <h1>Métodos de Pagamento</h1>
+        element: <Pgto />
       },
     ]
   },

@@ -1,7 +1,17 @@
-import { Link } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import "./MyProfile.css"
 
 export const MyProfile = () => {
+
+  const navigate = useNavigate()
+
+  const handleNavigation = (path) => {
+    navigate(path)
+  }
+
+  const handleTest = () => {
+    navigate('/')
+  }
 
   return(
     <>
@@ -11,9 +21,19 @@ export const MyProfile = () => {
       </div>
       
     <section className="box-content">
-        <Link to="/meuspedidos/meus-pedidos" className="box">Meus Pedidos</Link>
+      
+      <div className="box" onClick={() => handleNavigation('/meus-pedidos/meus-pedidos')}>
+        <h2>Meus Pedidos</h2>
+        <span>Rastrear, devolver ou comprar produtos novamente</span>
+      </div>
 
-        <Link to="/meuspedidos/minhas-informacoes" className="box">Minhas Informacoes</Link>
+      <div className="box" onClick={() => handleNavigation('/meus-pedidos/minhas-informacoes')}>
+        <h2>Minhas Informações</h2>
+      </div>
+
+        <div className="test-container" onClick={handleTest}>
+          <h1>teste</h1>
+        </div>
     </section>
     </>
   )

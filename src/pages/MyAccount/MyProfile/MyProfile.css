@@ -4,8 +4,21 @@
 }
 .box {
   cursor: pointer;
-  background-color: #f9f8fe;
-  border: 2px solid #c92071;
+  background-color: #fff;
+  border: 1px solid #6e6e6e;
   border-radius: 8px;
-  padding: 40px 60px;
+  padding: 10px 20px;
+  transition: 0.3s;
+  width: 250px;
+}
+
+.box:hover {
+  background-color: #f8d7e2;
+}
+
+.test-container {
+  cursor: pointer;
+  background-color: green;
+  width: 100px;
+  text-align: center;
 }

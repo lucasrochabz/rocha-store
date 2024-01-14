@@ -3,11 +3,17 @@
   padding: 60px;
 }
 
-.login-content {
+.fundo {
   background-color: #ffffff;
-  width: 600px;
-  height: 500px;
+  width: 583px;
+  height: 560px;
+  border-radius: 50px;
+}
+
+.login-content {
   padding: 30px;
+  border-radius: 4px;
+  background-color: #ffffff;
 }
 
 .login-content p {
@@ -16,7 +22,6 @@
 
 .login-content label {
   display: block;
-  /* background-color: red; */
   margin-top: 30px;
 }
 
@@ -30,6 +35,16 @@
 }
 
 .login-content button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.75px;
+  color: #f5f5f5;
   display: block;
   margin-top: 30px;
+  background-color: #c92071;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  padding: 12px;
 }

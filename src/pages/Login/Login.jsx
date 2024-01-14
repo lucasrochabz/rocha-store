@@ -8,27 +8,31 @@ export const Login = () => {
     <>
       <HeaderClean />
       <section className="login-container">
-        <div className="login-content">
-        <h3>Acesse sua conta</h3>
-        <p>
-          Novo cliente? Então regriste-se <span>aqui.</span>
-        </p>
 
-        <label htmlFor="login">Login *</label>
-        <input placeholder="Insira seu login ou email" type="text" />
+        <div className="fundo">
 
-        <label htmlFor="senha">Senha *</label>
-        <input placeholder="Insira sua senha" type="text" />
+          <div className="login-content">
+            <h3>Acesse sua conta</h3>
+            <p>
+              Novo cliente? Então regriste-se <span>aqui.</span>
+            </p>
 
-        <Link to="#">
-          Esqueci minha senha
-        </Link>
+            <label htmlFor="login">Login *</label>
+            <input placeholder="Insira seu login ou email" type="text" />
 
-        <button>Acessar conta</button>
+            <label htmlFor="senha">Senha *</label>
+            <input placeholder="Insira sua senha" type="text" />
 
-        <p>Ou faça login com Gmail Facebook</p>
+            <Link to="#">
+              Esqueci minha senha
+            </Link>
 
+            <button>Acessar conta</button>
+
+            <p>Ou faça login com Gmail Facebook</p>
+          </div>
         </div>
+
       </section>
       <Footer />
     </>
