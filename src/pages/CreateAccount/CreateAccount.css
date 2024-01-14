@@ -5,6 +5,8 @@ body {
 .create-account-container {
   display: flex;
   justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 153px;
 }
 
 .create-account-content {
@@ -95,5 +97,4 @@ body {
   padding: 11px;
   border-radius: 8px;
   width: 100%;
-  margin-bottom: 53px;
 }
